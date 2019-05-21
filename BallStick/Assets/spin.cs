@@ -17,11 +17,11 @@ public class spin : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
-            transform.RotateAround(gameObject.transform.root.position, Vector3.back, rotateSpd * Time.deltaTime);
+            transform.RotateAround(gameObject.transform.root.position, Vector3.forward, rotateSpd * Time.deltaTime);
         }
         else if (Input.GetMouseButton(1))
         {
-            transform.RotateAround(gameObject.transform.root.position, Vector3.forward, rotateSpd * Time.deltaTime);
+            transform.RotateAround(gameObject.transform.root.position, Vector3.back, rotateSpd * Time.deltaTime);
         }
     }
 }
