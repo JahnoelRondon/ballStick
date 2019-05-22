@@ -105,7 +105,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 008f7780d03411443a39943bc2226053, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  rotateSpd: 200
+  rotateSpd: 250
 --- !u!1 &5222434235396198627
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,6 +214,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   rotateSpd: 470
   moveSpd: 30
+  maxXRange: 6.5
 --- !u!54 &5222434235396198648
 Rigidbody:
   m_ObjectHideFlags: 0
