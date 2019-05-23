@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class Blocks : MonoBehaviour
 {
+    [SerializeField] GameObject particleprefab;
+
     Level level;
 
     void Start()
@@ -18,6 +20,10 @@ public class Blocks : MonoBehaviour
         {
             case "Ball":
                 level.reduceBreakableNumber();
+
+                var prefab = Instantiate(particleprefab, transform.position, Quaternion.identity);
+                Destroy(prefab, 1f);
+
                 Destroy(this.gameObject);
                 break;
         }

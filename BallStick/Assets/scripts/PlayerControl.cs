@@ -51,6 +51,7 @@ public class PlayerControl : MonoBehaviour
         xpos.x = Mathf.Clamp(xpos.x, -maxXRange, maxXRange);
         transform.position = xpos;
 
+        //clamping
         /*if(transform.position.x <= -maxXRange)
         {
             transform.position = new Vector3(-maxXRange, transform.position.y, transform.position.z);
