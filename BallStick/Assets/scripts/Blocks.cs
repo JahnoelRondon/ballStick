@@ -6,10 +6,13 @@ public class Blocks : MonoBehaviour
 {
     [SerializeField] GameObject particleprefab;
 
+    private shake shake;
     Level level;
 
     void Start()
     {
+        shake = GameObject.FindGameObjectWithTag("screenShake").GetComponent<shake>();
+
         level = FindObjectOfType<Level>();
         level.countBreakables();
     }
@@ -20,7 +23,7 @@ public class Blocks : MonoBehaviour
         {
             case "Ball":
                 level.reduceBreakableNumber();
-
+                shake.shaking();
                 var prefab = Instantiate(particleprefab, transform.position, Quaternion.identity);
                 Destroy(prefab, 1f);
 

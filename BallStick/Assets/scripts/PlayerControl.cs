@@ -46,6 +46,7 @@ public class PlayerControl : MonoBehaviour
         Vector3 velocity = movement * moveSpd;
 
         rbpaddle.velocity = velocity;
+        
 
         Vector3 xpos = transform.position;
         xpos.x = Mathf.Clamp(xpos.x, -maxXRange, maxXRange);
