@@ -7,9 +7,14 @@ public class PlayerMover : MonoBehaviour
     [SerializeField] float movespd = 8f;
     Rigidbody rb;
 
+    shake shake;
+
     void Start()
     {
         rb = GetComponent<Rigidbody>();
+        shake = GameObject.Find("ShakeManager").GetComponent<shake>();
+        //or
+        //shake = GameObject.FindGameObjectWithTag("screenShake").GetComponent<shake>();
     }
 
 
@@ -35,6 +40,7 @@ public class PlayerMover : MonoBehaviour
     private void OnCollisionEnter(Collision collision)
     {
         print("wall collider");
+        shake.shaking();
     }
 
 }
