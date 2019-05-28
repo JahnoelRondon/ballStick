@@ -16,8 +16,14 @@ public class EnemyMover : MonoBehaviour
 
     private void Update()
     {
-        Vector3 movement = Vector3.MoveTowards(transform.position, target.position, spd * Time.deltaTime);
-        transform.position = movement;
+        
+
+        if (Vector3.Distance(transform.position, target.position) < 10)
+        {
+            Vector3 movement = Vector3.MoveTowards(transform.position, target.position, spd * Time.deltaTime);
+            transform.position = movement;
+        } 
+        
     }
 
     private void FixedUpdate()

@@ -32,6 +32,14 @@ public class PlayerMover : MonoBehaviour
 
     }
 
+    private void Update()
+    {
+        if (Input.GetKeyDown(KeyCode.Space))
+        {
+            print("shoot");
+        }
+    }
+
     private void OnTriggerEnter(Collider other)
     {
         print("wall trigger");
