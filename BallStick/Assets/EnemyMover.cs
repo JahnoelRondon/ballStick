@@ -4,15 +4,25 @@ using UnityEngine;
 
 public class EnemyMover : MonoBehaviour
 {
-    // Start is called before the first frame update
-    void Start()
+    [SerializeField] float spd = 30f;
+    private Transform target;
+    Rigidbody rb;
+
+    private void Start()
     {
-        
+        target = GameObject.Find("PlayerShooter").GetComponent<Transform>();
+        rb = GetComponent<Rigidbody>();
     }
 
-    // Update is called once per frame
-    void Update()
+    private void Update()
     {
+        Vector3 movement = Vector3.MoveTowards(transform.position, target.position, spd * Time.deltaTime);
+        transform.position = movement;
+    }
+
+    private void FixedUpdate()
+    {
+        //var pos = transform.position;
         
     }
 }
