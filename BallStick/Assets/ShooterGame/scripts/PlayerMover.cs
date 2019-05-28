@@ -46,14 +46,19 @@ public class PlayerMover : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Space))
+        if (Input.GetKey(KeyCode.Space))
         {
-            
-            print("shoot");
-            Rigidbody bulletInstant;
+            if(Time.time > nextFire)
+            {
+                print("shoot");
+                Rigidbody bulletInstant;
 
-            bulletInstant = Instantiate(bulletprefab, muzzel.transform.position, muzzel.rotation) as Rigidbody;
-            bulletInstant.AddForce(muzzel.right * 400);            
+                bulletInstant = Instantiate(bulletprefab, muzzel.transform.position, muzzel.rotation) as Rigidbody;
+                bulletInstant.AddForce(muzzel.right * 400);
+
+                nextFire = Time.time + fireRate;
+            }
+                        
         }
     }
 
@@ -62,11 +67,7 @@ public class PlayerMover : MonoBehaviour
         print("wall trigger");
     }
 
-    private void OnCollisionEnter(Collision collision)
-    {
-        print("wall collider");
-        shake.shaking();
-    }
+   
 
 
 }

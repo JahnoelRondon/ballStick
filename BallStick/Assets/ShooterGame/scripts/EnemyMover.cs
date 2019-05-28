@@ -18,17 +18,18 @@ public class EnemyMover : MonoBehaviour
     {
         
 
-        if (Vector3.Distance(transform.position, target.position) < 10)
-        {
-            Vector3 movement = Vector3.MoveTowards(transform.position, target.position, spd * Time.deltaTime);
-            transform.position = movement;
-        } 
+        
         
     }
 
     private void FixedUpdate()
     {
         //var pos = transform.position;
-        
+        if (Vector3.Distance(transform.position, target.position) < 10)
+        {
+            Vector3 movement = Vector3.MoveTowards(transform.position, target.position, spd * Time.deltaTime);
+            transform.position = movement;
+        }
+
     }
 }
