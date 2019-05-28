@@ -4,8 +4,20 @@ using UnityEngine;
 
 public class PlayerMover : MonoBehaviour
 {
+    //other objects & prefabs
+    [SerializeField] Transform muzzel;
+    [SerializeField] Rigidbody bulletprefab;
+
+    //parameter
     [SerializeField] float movespd = 8f;
+
+    [SerializeField] float fireRate = 0.5f;
+    [SerializeField] float nextFire = 0.0f;
+
+    //components 
     Rigidbody rb;
+
+    
 
     shake shake;
 
@@ -36,7 +48,12 @@ public class PlayerMover : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
+            
             print("shoot");
+            Rigidbody bulletInstant;
+
+            bulletInstant = Instantiate(bulletprefab, muzzel.transform.position, muzzel.rotation) as Rigidbody;
+            bulletInstant.AddForce(muzzel.right * 400);            
         }
     }
 
@@ -50,5 +67,6 @@ public class PlayerMover : MonoBehaviour
         print("wall collider");
         shake.shaking();
     }
+
 
 }
