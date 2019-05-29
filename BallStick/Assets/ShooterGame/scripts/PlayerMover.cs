@@ -13,6 +13,7 @@ public class PlayerMover : MonoBehaviour
 
     [SerializeField] float fireRate = 0.5f;
     [SerializeField] float nextFire = 0.0f;
+    [SerializeField] float playerBulletspd = 400f;
 
     //components 
     Rigidbody rb;
@@ -32,7 +33,19 @@ public class PlayerMover : MonoBehaviour
 
     private void FixedUpdate()
     {
+        Movement();
 
+    }
+
+
+    private void Update()
+    {
+        ProcessShooting();
+    }
+
+
+    private void Movement()
+    {
         float horizontal = Input.GetAxis("Horizontal");
         float vertical = Input.GetAxis("Vertical");
 
@@ -40,34 +53,26 @@ public class PlayerMover : MonoBehaviour
         Vector3 velocity = movement * movespd;
 
         rb.velocity = velocity;
-        
-
     }
 
-    private void Update()
+
+
+    private void ProcessShooting()
     {
         if (Input.GetKey(KeyCode.Space))
         {
-            if(Time.time > nextFire)
+            if (Time.time > nextFire)
             {
                 print("shoot");
                 Rigidbody bulletInstant;
 
                 bulletInstant = Instantiate(bulletprefab, muzzel.transform.position, muzzel.rotation) as Rigidbody;
-                bulletInstant.AddForce(muzzel.right * 400);
+                bulletInstant.AddForce(muzzel.right * playerBulletspd);
 
                 nextFire = Time.time + fireRate;
             }
-                        
+
         }
     }
-
-    private void OnTriggerEnter(Collider other)
-    {
-        print("wall trigger");
-    }
-
-   
-
 
 }

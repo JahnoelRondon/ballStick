@@ -256,7 +256,12 @@ PrefabInstance:
     - target: {fileID: 3224971216998387221, guid: ffffd2e65442a83458d49a527cc44d2f,
         type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1.55
+      value: 1.673
+      objectReference: {fileID: 0}
+    - target: {fileID: 690512101416185041, guid: ffffd2e65442a83458d49a527cc44d2f,
+        type: 3}
+      propertyPath: playerBulletspd
+      value: 600
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: ffffd2e65442a83458d49a527cc44d2f, type: 3}
