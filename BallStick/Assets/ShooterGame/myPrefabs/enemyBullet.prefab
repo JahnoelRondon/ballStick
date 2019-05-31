@@ -122,5 +122,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bulletspeed: 10
-  enemyparticle: {fileID: 3039004417486181622, guid: 533f75e6ded31b042a12f1c8e1dac2be,
-    type: 3}
+  enemyparticle: {fileID: 187180108, guid: 5bb17d86d5eb40c43b977f1de43c9906, type: 3}
