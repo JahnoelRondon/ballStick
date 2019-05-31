@@ -49,9 +49,7 @@ public class ball : MonoBehaviour
     {
         switch (other.collider.gameObject.tag)
         {
-            case "Finish":
-                print("hit stick");
-                break;
+            
         }
     }
 }

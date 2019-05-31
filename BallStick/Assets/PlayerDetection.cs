@@ -9,6 +9,7 @@ public class PlayerDetection : MonoBehaviour
 
     private void OnCollisionEnter(Collision other)
     {
+           
            switch (other.collider.gameObject.tag)
            {
                case "Ball":
