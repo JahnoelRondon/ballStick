@@ -1,5 +1,6 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
+<<<<<<< HEAD
 --- !u!1 &2936355662772344498
 GameObject:
   m_ObjectHideFlags: 0
@@ -76,6 +77,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DeathParticle: {fileID: 1508704147485253243, guid: 2fd0c5b98c5496049811aae31ef465b6,
     type: 3}
+=======
+>>>>>>> parent of b5d8f21... before switching around colliders and rigidbody
 --- !u!1 &5222434234177889210
 GameObject:
   m_ObjectHideFlags: 0
@@ -89,10 +92,9 @@ GameObject:
   - component: {fileID: 5222434234177889213}
   - component: {fileID: 5222434234177889212}
   - component: {fileID: 5222434234177889215}
-  - component: {fileID: 391544389}
   m_Layer: 0
   m_Name: stick
-  m_TagString: Finish
+  m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -136,7 +138,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6e0e37a3a0d15fc4a9af822f1c3fbf19, type: 2}
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -167,9 +169,9 @@ CapsuleCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   m_Radius: 0.5000001
-  m_Height: 2.2229292
+  m_Height: 2.0712523
   m_Direction: 1
-  m_Center: {x: 0.0000000745058, y: -0.04020899, z: -0.00000011175871}
+  m_Center: {x: 0.00000006861753, y: 0.03562687, z: -0.000000103644304}
 --- !u!114 &5222434234177889215
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -183,6 +185,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   rotateSpd: 250
+<<<<<<< HEAD
 --- !u!54 &391544389
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -199,6 +202,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+=======
+>>>>>>> parent of b5d8f21... before switching around colliders and rigidbody
 --- !u!1 &5222434235396198627
 GameObject:
   m_ObjectHideFlags: 0
@@ -231,7 +236,6 @@ Transform:
   m_LocalScale: {x: 2, y: 2, z: 2}
   m_Children:
   - {fileID: 5222434234177889211}
-  - {fileID: 2210191503492608321}
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
@@ -260,7 +264,7 @@ MeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 2100000, guid: 6cbfbc90c395484408b5c693beb76928, type: 2}
+  - {fileID: 10303, guid: 0000000000000000f000000000000000, type: 0}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -292,6 +296,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 7cb4e448bf9150f42a02f3d5a6f9ddde, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+<<<<<<< HEAD
+=======
+  rotateSpd: 470
+  moveSpd: 30
+  maxXRange: 6.5
+>>>>>>> parent of b5d8f21... before switching around colliders and rigidbody
 --- !u!54 &5222434235396198648
 Rigidbody:
   m_ObjectHideFlags: 0

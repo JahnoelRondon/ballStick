@@ -17,7 +17,6 @@ public class Level : MonoBehaviour
         if(breakables < 1)
         {
             print("you win");
-            //load next level
         }
     }
 
