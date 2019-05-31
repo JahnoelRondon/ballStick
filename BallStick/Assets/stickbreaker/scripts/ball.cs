@@ -49,8 +49,8 @@ public class ball : MonoBehaviour
     {
         switch (other.collider.gameObject.tag)
         {
-            case "Player":
-                print("kill player");
+            case "Finish":
+                print("hit stick");
                 break;
         }
     }
