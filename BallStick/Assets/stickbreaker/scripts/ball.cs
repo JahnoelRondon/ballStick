@@ -53,8 +53,11 @@ public class ball : MonoBehaviour
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
             
 =======
+=======
+>>>>>>> parent of b5d8f21... before switching around colliders and rigidbody
 =======
 >>>>>>> parent of b5d8f21... before switching around colliders and rigidbody
 =======

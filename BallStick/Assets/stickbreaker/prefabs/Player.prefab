@@ -4,6 +4,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!1 &2936355662772344498
 GameObject:
   m_ObjectHideFlags: 0
@@ -80,6 +81,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   DeathParticle: {fileID: 1508704147485253243, guid: 2fd0c5b98c5496049811aae31ef465b6,
     type: 3}
+=======
+>>>>>>> parent of b5d8f21... before switching around colliders and rigidbody
 =======
 >>>>>>> parent of b5d8f21... before switching around colliders and rigidbody
 =======
@@ -198,6 +201,7 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 --- !u!54 &391544389
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -214,6 +218,8 @@ Rigidbody:
   m_Interpolate: 0
   m_Constraints: 0
   m_CollisionDetection: 0
+=======
+>>>>>>> parent of b5d8f21... before switching around colliders and rigidbody
 =======
 >>>>>>> parent of b5d8f21... before switching around colliders and rigidbody
 =======
@@ -318,6 +324,12 @@ MonoBehaviour:
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+  rotateSpd: 470
+  moveSpd: 30
+  maxXRange: 6.5
+>>>>>>> parent of b5d8f21... before switching around colliders and rigidbody
 =======
   rotateSpd: 470
   moveSpd: 30
