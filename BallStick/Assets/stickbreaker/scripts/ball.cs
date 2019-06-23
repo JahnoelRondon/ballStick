@@ -49,25 +49,9 @@ public class ball : MonoBehaviour
     {
         switch (other.collider.gameObject.tag)
         {
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-<<<<<<< HEAD
-            
-=======
-=======
->>>>>>> parent of b5d8f21... before switching around colliders and rigidbody
-=======
->>>>>>> parent of b5d8f21... before switching around colliders and rigidbody
-=======
->>>>>>> parent of b5d8f21... before switching around colliders and rigidbody
-=======
->>>>>>> parent of b5d8f21... before switching around colliders and rigidbody
             case "Player":
                 print("kill player");
                 break;
->>>>>>> parent of b5d8f21... before switching around colliders and rigidbody
         }
     }
 }
